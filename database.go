@@ -1,6 +1,6 @@
 package pmgo
 
-import mgo "gopkg.in/mgo.v2"
+import "github.com/globalsign/mgo"
 
 type DatabaseManager interface {
 	// AddUser(username, password string, readOnly bool) error

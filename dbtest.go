@@ -1,6 +1,6 @@
 package pmgo
 
-import "gopkg.in/mgo.v2/dbtest"
+import "github.com/globalsign/mgo/dbtest"
 
 type DBTestServer interface {
 	Session() SessionManager
