@@ -20,8 +20,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/percona/pmgo"
-    "gopkg.in/mgo.v2/bson"
+    "github.com/gusnluo/pmgo"
+    "github.com/globalsign/mgo/bson"
 )
 
 type User struct {
@@ -70,11 +70,11 @@ import (
     "reflect"
     "testing"
 
-    "gopkg.in/mgo.v2/bson"
+    "github.com/globalsign/mgo/bson"
 
     "github.com/golang/mock/gomock"
-    "github.com/percona/pmgo"
-    "github.com/percona/pmgo/pmgomock"
+    "github.com/gunsluo/pmgo"
+    "github.com/gunsluo/pmgo/pmgomock"
 )
 
 var Server pmgo.DBTestServer
@@ -168,6 +168,6 @@ func tearDown() {
 ## Generating new mocks
 If you update a file to add more functions, you can create new mocks by running:  
 ```
-mockgen -source <path>/pmgo/collection.go -destination=<path>/pmgo/pmgomock/collection.go -package pmgomock -imports ".=github.com/percona/pmgo"
+mockgen -source <path>/pmgo/collection.go -destination=<path>/pmgo/pmgomock/collection.go -package pmgomock -imports ".=github.com/gunsluo/pmgo"
 ```
 
