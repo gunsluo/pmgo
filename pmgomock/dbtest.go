@@ -7,7 +7,6 @@ package pmgomock
 import (
 	gomock "github.com/golang/mock/gomock"
 	pmgo "github.com/gunsluo/pmgo"
-	. "github.com/percona/pmgo"
 	reflect "reflect"
 )
 
